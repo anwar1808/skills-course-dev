@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Complete Guide to Building Skills for Claude — Interactive Course</title>
+  <meta name="description" content="An interactive, hands-on course based on Anthropic's Complete Guide to Building Skills for Claude." />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- ANALYTICS: drop GoatCounter / Plausible script here once code is set. Placeholder active, no-op. -->
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#" class="brand" data-nav="home">
+        <span class="brand-star" aria-hidden="true">✻</span>
+        <span class="brand-text">Building Skills for Claude</span>
+      </a>
+      <div class="topbar-progress" aria-hidden="true">
+        <div class="progress-bar"><div class="progress-bar-fill" id="progressFill"></div></div>
+        <span class="progress-label" id="progressLabel">0 / 10</span>
+      </div>
+      <div class="topbar-actions">
+        <button class="btn-ghost" id="openSettings" title="Export / import progress">Settings</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <section class="content" id="content"></section>
+  </main>
+
+  <dialog id="settingsDialog" class="dialog">
+    <form method="dialog" class="dialog-body">
+      <h2>Your progress</h2>
+      <p class="muted">Your progress is saved in your browser's local storage — it never leaves this device. Use export to back it up, or import to restore on another machine.</p>
+      <div class="dialog-row">
+        <button class="btn-primary" id="exportBtn" type="button">Export progress (.json)</button>
+        <label class="btn-secondary" for="importInput">Import progress</label>
+        <input id="importInput" type="file" accept="application/json" hidden />
+      </div>
+      <div class="dialog-row danger">
+        <button class="btn-danger" id="resetBtn" type="button">Reset all progress</button>
+      </div>
+      <menu>
+        <button value="cancel">Close</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" integrity="sha512-XMVd28F1oH/O71fzwBnV7HucLxVwtxf26XV8P4wPk26EDxuGZ91N8bsOttmnomcCD3CS5ZMRL50H0GgOHvegtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/lessons.js"></script>
+  <script src="./js/exercises.js"></script>
+  <script src="./js/capstone.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
