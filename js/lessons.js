@@ -107,7 +107,7 @@ Result: Fully planned sprint with tasks created</code></pre>
 
       <div class="callout category-1">
         <span class="callout-label">Category 1 · Document &amp; asset creation</span>
-        <p><strong>Produces consistent, high-quality output</strong> — documents, decks, apps, designs. No external tools required; uses Claude's built-in capabilities. Think: a skill that converts a raw changelog into polished release notes ready to publish.</p>
+        <p><strong>Produces consistent, high-quality output</strong> — documents, decks, apps, designs. No external tools required; uses Claude's built-in capabilities. Think: a skill that turns a brand brief into an on-brand pitch deck.</p>
         <p class="small muted"><strong>Success looks like:</strong> the output meets your style guide every time; no manual rewrites before shipping; one prompt in, one finished artefact out.</p>
       </div>
 
