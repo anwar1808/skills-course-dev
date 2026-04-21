@@ -144,7 +144,7 @@ Result: Fully planned sprint with tasks created</code></pre>
         { id: 'cat3', label: 'Category 3', title: 'MCP enhancement', hint: 'Workflow guidance layered on an existing MCP integration.' },
       ],
       items: [
-        { text: 'Generate on-brand pitch decks from a brief', answer: 'cat1' },
+        { text: 'Draft release notes from a raw changelog', answer: 'cat1' },
         { text: 'Turn Sentry error data into GitHub PR fixes', answer: 'cat3' },
         { text: 'Walk users through creating a new skill, step-by-step', answer: 'cat2' },
         { text: 'Produce quarterly compliance reports as polished PDFs', answer: 'cat1' },
