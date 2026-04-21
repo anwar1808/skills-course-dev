@@ -124,12 +124,25 @@ Result: Fully planned sprint with tasks created</code></pre>
       </div>
 
       <h3>Success criteria — know before you build</h3>
-      <p>Aim for rigour, accept an element of vibes. Still — decide upfront what "working" means:</p>
+      <p>Skills are hard to evaluate. The thing you're asking Claude to do — <em>"apply this workflow, use good judgement"</em> — doesn't reduce cleanly to a pass/fail number.</p>
+      <p>Anthropic's own framing: aim for rigour, accept an element of vibes. You won't measure everything. You still need to decide upfront what <em>"working"</em> means, or you'll never know when to stop tweaking.</p>
+      <p>Two types of metric to name before you start.</p>
+
+      <h4>Quantitative — things you can count</h4>
       <ul>
-        <li><strong>Quantitative:</strong> triggers on 90% of relevant queries. Completes the workflow in a predictable number of tool calls — not 6 this time and 20 the next. Zero failed API calls per run.</li>
-        <li><strong>Qualitative:</strong> users don't need to prompt Claude about next steps. Workflow completes without correction. Consistent results across sessions.</li>
+        <li><strong>Trigger rate.</strong> Does the skill load when it should? Run 10–20 test questions and count how often Claude picks it up automatically. Aim for 90%+.</li>
+        <li><strong>Tool-call count.</strong> A healthy skill takes a predictable number of tool calls to finish a workflow. If a 5-step task costs 6 calls one run and 20 the next, Claude is wandering — the instructions aren't tight enough.</li>
+        <li><strong>Error rate.</strong> Zero failed API calls per run. Every retry is wasted tokens and a worse user experience. If a call fails, your instructions need more specifics, not more hope.</li>
       </ul>
-      <p>Each category above shows a concrete "Success looks like" line. If you can't name one metric per bucket for your own skill, you can't tell when it's done.</p>
+
+      <h4>Qualitative — things you can judge</h4>
+      <ul>
+        <li><strong>No hand-holding.</strong> Users describe the outcome; Claude figures out the steps. If people have to prompt "now do the next thing", the skill isn't doing its job.</li>
+        <li><strong>No mid-flow corrections.</strong> The workflow completes without the user stepping in to fix something halfway through. Every correction marks a place where the instructions are ambiguous — find it and tighten.</li>
+        <li><strong>Consistent results.</strong> Same task, same output, session after session. Variability means your instructions are leaving too much to interpretation.</li>
+      </ul>
+
+      <p>Each category card above gave you a concrete <em>"Success looks like"</em> example. If you can't name at least one quantitative and one qualitative metric for your own skill, you haven't defined what "done" looks like — and you won't know when you're there.</p>
     `,
     exercise: {
       type: 'categorize',
