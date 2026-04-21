@@ -102,30 +102,33 @@ Result: Fully planned sprint with tasks created</code></pre>
       <p>Four things: name, trigger, steps, result. Until you can write those for your skill, don't write the skill.</p>
 
       <h3>Anthropic's three categories</h3>
-      <p>Every skill they've seen falls into one of three buckets. Knowing which bucket yours is in tells you which patterns apply and which examples to copy.</p>
+      <p>Every skill Anthropic has seen falls into one of three buckets. Knowing which bucket yours is in tells you which patterns apply and which examples to copy.</p>
 
       <div class="callout category-1">
         <span class="callout-label">Category 1 · Document &amp; asset creation</span>
-        <p><strong>Produces consistent, high-quality output</strong> — documents, decks, apps, designs. No external tools required; uses Claude's built-in capabilities. Think: a skill that turns a brand brief into an on-brand pitch deck.</p>
+        <p><strong>Produces consistent, high-quality output</strong> — documents, decks, apps, designs. No external tools required; uses Claude's built-in capabilities. Think: a skill that converts a raw changelog into polished release notes ready to publish.</p>
+        <p class="small muted"><strong>Success looks like:</strong> the output meets your style guide every time; no manual rewrites before shipping; one prompt in, one finished artefact out.</p>
       </div>
 
       <div class="callout category-2">
         <span class="callout-label">Category 2 · Workflow automation</span>
-        <p><strong>Multi-step processes that benefit from consistent methodology</strong>, often across multiple MCP servers. Think: the skill that walks you through creating another skill — step-by-step, with validation gates.</p>
+        <p><strong>Multi-step processes that benefit from consistent methodology</strong>, often across multiple MCP servers. Think: a skill that runs your weekly launch checklist — copy review, compliance pass, analytics verification, sign-off — before anything goes live.</p>
+        <p class="small muted"><strong>Success looks like:</strong> the same steps run in the same order every time; no skipped stages; the user describes the outcome, Claude handles the sequence.</p>
       </div>
 
       <div class="callout category-3">
         <span class="callout-label">Category 3 · MCP enhancement</span>
-        <p><strong>Workflow guidance layered on an existing MCP integration.</strong> The MCP gives Claude the tools; the skill tells it how to use them well. Think: Sentry's code-review skill that turns error-monitoring data into actual pull-request fixes.</p>
+        <p><strong>Workflow guidance layered on an existing MCP integration.</strong> The MCP gives Claude the tools; the skill tells it how to use them well. Think: a skill on top of your Stripe MCP that handles refund requests — fetching the transaction, checking policy, processing the refund, logging the reason.</p>
+        <p class="small muted"><strong>Success looks like:</strong> Claude picks the right MCP tool without being told; zero failed calls; the user describes the job, not the API.</p>
       </div>
 
       <h3>Success criteria — know before you build</h3>
       <p>Aim for rigour, accept an element of vibes. Still — decide upfront what "working" means:</p>
       <ul>
-        <li><strong>Quantitative:</strong> triggers on 90% of relevant queries. Completes workflow in X tool calls. Zero failed API calls per run.</li>
+        <li><strong>Quantitative:</strong> triggers on 90% of relevant queries. Completes the workflow in a predictable number of tool calls — not 6 this time and 20 the next. Zero failed API calls per run.</li>
         <li><strong>Qualitative:</strong> users don't need to prompt Claude about next steps. Workflow completes without correction. Consistent results across sessions.</li>
       </ul>
-      <p>If you can't name one metric per bucket, you can't tell when the skill is done.</p>
+      <p>Each category above shows a concrete "Success looks like" line. If you can't name one metric per bucket for your own skill, you can't tell when it's done.</p>
     `,
     exercise: {
       type: 'categorize',

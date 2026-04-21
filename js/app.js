@@ -23,6 +23,12 @@ const GLOSSARY = {
   'portability': 'The same skill working on Claude.ai, Claude Code, and the API without modification.',
   'skill-creator': 'A built-in Anthropic skill that helps you design, review, and refine other skills.',
   'Agent SDK': 'Anthropic\'s SDK for building custom agents. Supports skills out of the box.',
+  'Linear': 'A project and issue-tracking app used by software teams — sprints, tasks, bug tickets, roadmaps. Popular with startups. Has an official MCP server.',
+  'Sentry': 'An error-monitoring service that captures runtime errors from production apps, attaching stack traces, environment, and user context. Has an official MCP server.',
+  'Figma': 'A web-based design tool used to create UI mockups, prototypes, and design systems. Has an official MCP server for extracting specs from design files.',
+  'Stripe': 'A payment-processing platform used for subscriptions, one-off charges, and refunds. Has an official MCP server.',
+  'Notion': 'An all-in-one workspace for docs, wikis, databases, and project management. Has an official MCP server.',
+  'Slack': 'A team messaging app. Has an official MCP server for posting messages, reading channels, and triggering workflows.',
 };
 
 function wireGlossary(root) {
