@@ -91,6 +91,7 @@ const LESSONS = [
       <p>Before you write anything, pin down two or three concrete use cases. If you can't describe what the user is trying to do, you can't tell Claude how to help.</p>
 
       <h3>What a good use case looks like</h3>
+      <p>Imagine you're building a sprint-planning skill that uses the Linear MCP. A decent use case definition might read:</p>
       <pre><code>Use Case: Project Sprint Planning
 Trigger: User says "help me plan this sprint" or "create sprint tasks"
 Steps:
